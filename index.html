@@ -5,6 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fremont Python Classes</title>
   <style>
+    .two-column {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left-text {
+  flex: 1;
+}
+
+.right-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column;
+  }
+}
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
